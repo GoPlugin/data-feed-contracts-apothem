@@ -4,7 +4,7 @@ const convertTokens = async (n) => {
 }
 
 const getInternalContract = async (web3, internalConractAddr) => {
-  const data = await $.getJSON("./contracts/AggregateAbi.json");
+  const data = await $.getJSON("./contracts/Abi.json");
   const netId = await web3.eth.net.getId();
   const instance = new web3.eth.Contract(
     data,
